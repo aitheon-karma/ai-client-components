@@ -1,0 +1,26 @@
+{
+  "name": "ai-client-components",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --aot",
+    "build:prod": "$(npm bin)/ng build --aot --prod --base-href /client-components/ && npm run docs",
+    "watch": "ng build --watch=true --aot",
+    "test": "ng test",
+    "lint": "ng lint ai-client-components --fix",
+    "e2e": "ng e2e",
+    "lib:watch": "$(npm bin)/ng build @aitheon/client-components --watch",
+    "lib:version": "cd projects/aitheon/client-components && npm version minor",
+    "lib:build": "$(npm bin)/ng build @aitheon/client-components",
+    "lib:publish": "npm run lib:build && npm publish dist/aitheon/client-components",
+    "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./projects/",
+    "typedoc": "typedoc"
+  },
+  "private": true,
+  "dependencies": {
+    "@aitheon/core-client": "1.14.44",
+    "@aitheon/orchestrator": "0.5.0"
+  },
+  "devDependencies": {}
+}

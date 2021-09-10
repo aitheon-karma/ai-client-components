@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "target": "es2015",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "ai-chat": [
+        "dist/ai-chat/ai-chat",
+        "dist/ai-chat"
+      ],
+      "ai-phone": [
+        "dist/ai-phone/ai-phone",
+        "dist/ai-phone"
+      ],
+      "elements": [
+        "dist/elements/elements",
+        "dist/elements"
+      ]
+    }
+  }
+}
